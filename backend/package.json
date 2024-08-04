@@ -1,0 +1,13 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "This is backend code",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run build\" \"npm run dev\"",
+    "build": "tsc --watch",
+    "dev": "nodemon",
+    "serve": "node dist/index.js",
+    "test": "jest"
+  }
+}
